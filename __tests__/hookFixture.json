@@ -1,0 +1,102 @@
+[
+  [
+    "Right ordering",
+    {
+       "fakeData":{
+          "successful":true,
+          "data":{
+             "next_to_go_ids":[
+                "10b5f6cd-55b0-4231-a058-4e19f6955e79",
+                "cf5136aa-020e-4d8b-b46e-21f10d499bd4",
+                "3131ac64-1f18-455c-b558-8b755e59b82a",
+                "c1353121-2443-4f3d-9e37-5dde57df7364",
+                "bde047dd-f069-41a6-8d30-4cb02fd7b189",
+                "c2727b74-c23b-48b2-8f84-5fcb5478a9a5"
+             ],
+             "race_summaries":{
+                "10b5f6cd-55b0-4231-a058-4e19f6955e79":{
+                   "race_id":"10b5f6cd-55b0-4231-a058-4e19f6955e79",
+                   "race_number":8,
+                   "meeting_name":"Cannington",
+                   "category_id":"9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+                   "advertised_start":{
+                      "seconds":1655105880
+                   }
+                },
+                "3131ac64-1f18-455c-b558-8b755e59b82a":{
+                   "race_id":"3131ac64-1f18-455c-b558-8b755e59b82a",
+                   "race_number":10,
+                   "meeting_name":"Traralgon",
+                   "category_id":"9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+                   "advertised_start":{
+                      "seconds":1655104860
+                   }
+                },
+                "bde047dd-f069-41a6-8d30-4cb02fd7b189":{
+                   "race_id":"bde047dd-f069-41a6-8d30-4cb02fd7b189",
+                   "race_number":4,
+                   "meeting_name":"Kawasaki",
+                   "category_id":"4a2788f8-e825-4d36-9894-efd4baf1cfae",
+                   "advertised_start":{
+                      "seconds":1655105400
+                   }
+                },
+                "c1353121-2443-4f3d-9e37-5dde57df7364":{
+                   "race_id":"c1353121-2443-4f3d-9e37-5dde57df7364",
+                   "race_number":7,
+                   "meeting_name":"Pinjarra",
+                   "category_id":"161d9be2-e909-4326-8c2c-35ed71fb460b",
+                   "advertised_start":{
+                      "seconds":1655105340
+                   }
+                },
+                "c2727b74-c23b-48b2-8f84-5fcb5478a9a5":{
+                   "race_id":"c2727b74-c23b-48b2-8f84-5fcb5478a9a5",
+                   "race_number":10,
+                   "meeting_name":"Mizusawa",
+                   "category_id":"4a2788f8-e825-4d36-9894-efd4baf1cfae",
+                   "advertised_start":{
+                      "seconds":1655105700
+                   }
+                },
+                "cf5136aa-020e-4d8b-b46e-21f10d499bd4":{
+                   "race_id":"cf5136aa-020e-4d8b-b46e-21f10d499bd4",
+                   "race_number":7,
+                   "meeting_name":"Cannington",
+                   "category_id":"9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+                   "advertised_start":{
+                      "seconds":1655104620
+                   }
+                }
+             }
+          }
+       },
+       "fakeDate":"2022-06-13 3:17:00 am",
+       "expectedResult": {
+          "array": [
+            1655104620,
+            1655104860,
+            1655105340,
+            1655105400,
+            1655105700,
+            1655105880
+          ],
+          "isFetching": false
+       }
+    }
+ ],
+ [
+    "failed fetch - keep fetching",
+    {
+      "fakeData":{
+          "successful": false,
+          "data": {}
+      },
+      "fakeDate":"2022-06-13 3:17:00 am",
+      "expectedResult": {
+          "array": [],
+          "isFetching": true
+      }
+    }
+  ]
+]
